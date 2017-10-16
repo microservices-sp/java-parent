@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.microservices_sp</groupId>
+		<artifactId>java-parent</artifactId>
+		<version>0.9</version>
+	</parent>
+
+    <name>Microservices SP | Documentation API for REST endpoints</name>
+    <artifactId>documentation-api</artifactId>
+    <packaging>jar</packaging>
+
+    <properties>
+        <!-- SWAGGER -->
+        <swagger.version>1.5.8</swagger.version>
+        <io.springfox.version>2.4.0</io.springfox.version>
+        <spring.version>4.2.5.RELEASE</spring.version>
+        <lombok.version>1.16.2</lombok.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    
+<!--     <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.2</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <showDeprecation>true</showDeprecation>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build> -->
+
+    <dependencies>
+        <!-- SWAGGER -->
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-core</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-annotations</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-jersey2-jaxrs</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-models</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        
+        <!-- SWAGGER / SPRING FOX -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- SPRING FRAMEWORK (NEEDED FOR SPRING FOX) -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- LOMBOK -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    
+    <organization>
+        <name>Microservices SP Meetup Group</name>
+        <url>https://www.meetup.com/microservices-sp/</url>
+    </organization>
+    
+    <developers>
+        <developer>
+            <id>190529733</id>
+            <name>Andre Dias</name>
+            <email>aloliveiradias@gmail.com</email>
+            <organization>Microservices SP Meetup Group</organization>
+            <organizationUrl>https://www.meetup.com/microservices-sp/</organizationUrl>
+        </developer>
+    </developers>
+
+</project>
