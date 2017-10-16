@@ -25,7 +25,7 @@ In this structure we have all samples presented or created by community during o
 Example of a Spring Boot application with one REST Service, documented with Swagger.
 
 - [ ] Build: mvn clean install -U
-- [ ] Run: mvn spring-boot:run
+- [ ] Run 01: mvn spring-boot:run OU java -jar ./target/sample-spring-0.9.jar
 - [ ] Check Swagger JSON at: http://localhost:8080/doc
 - [ ] Check Swagger Interface at: http://localhost:8080/swagger-ui.html
 - [ ] Sample Endpoint 01 (GET): http://localhost:8080/entity/action
